@@ -1,0 +1,62 @@
+@use '../variables';
+
+.command-line {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid var(--console-border);
+  background: var(--console-bg);
+
+  &__prompt {
+    color: var(--console-prompt);
+    margin-right: 0.5rem;
+    user-select: none;
+  }
+
+  &__input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--console-text);
+    font-family: var(--monospace);
+    font-size: inherit;
+    user-select: text;
+    
+    // Custom caret styling
+    caret-color: var(--console-prompt);
+    caret-shape: block;
+    caret-width: 8px;
+    
+    // Normal text selection
+    &::selection {
+      background: var(--console-selection);
+      color: var(--console-bg);
+    }
+    
+    // Keep the blinking caret
+    &:focus {
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 1em;
+        background-color: var(--console-prompt);
+        margin-left: 2px;
+        animation: blink 1s step-end infinite;
+        vertical-align: text-bottom;
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,24 @@
+@use "./_variables" as *;
+@use "./_reset";
+@use 'components/defaultView';
+@use 'components/console';
+@use 'components/commandLine';
+@use 'components/commandOutput';
+
+body {
+  background-color: var(--console-bg);
+  color: var(--console-text);
+  font-family: var(--monospace);
+  font-weight: 400;
+  font-size: 0.75rem;
+
+  ::selection {
+    background: var(--console-selection-alt);
+    color: var(--console-bg);
+  }
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}

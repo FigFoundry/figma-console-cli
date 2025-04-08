@@ -1,0 +1,23 @@
+:root {
+    font-size: 16px;
+    --monospace: Roboto Mono, Monaco, Courier New, monospace;
+    --s-01: .0625rem;
+    --s-02: .125rem;
+    --s-04: .25rem;
+    --s-06: .375rem;
+    --s-08: .5rem;
+    --s-12: .75rem;
+    --s-16: 1rem;
+    --s-20: 1.25rem;
+
+    // Console colors
+    --console-bg: oklch(0.18 0.0149 188.08);
+    --console-text: oklch(100% 0 0);
+    --console-prompt: oklch(88.22% .1114 188.96);
+    --console-error: oklch(0.66 0.2244 31.94);
+    --console-header-bg: oklch(0.18 0.0149 188.08);
+    --console-border: oklch(0.26 0.0128 188.13);
+
+    --console-selection:  oklch(88.22% .1114 188.96);
+    --console-selection-alt: oklch(87.44% .1203 80.29);
+}
