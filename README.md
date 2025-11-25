@@ -1,10 +1,4 @@
-```
-   ______                       __   
-  / ____/___  ____  _________  / /__ 
- / /   / __ \/ __ \/ ___/ __ \/ / _ \
-/ /___/ /_/ / / / (__  ) /_/ / /  __/
-\____/\____/_/ /_/____/\____/_/\___/ 
-```
+![CLI Preview](/src/assets/console-one.png)
 
 ### Console CLI
 Console CLI lets you control Figma using commands. You can list fonts, styles, and components, create shapes, get details about selected elements, check file analytics, and view user info.
